@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title>Cyrystal Collector!</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1>Crystal Collector Game!</h1>
+            <h3>Computer Choice:</h3>
+            <h3 id="compNumb"></h3>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+                    <img class="crystalimg img-responsive" id="crystal1" src="assets/images/crystal1.jpg" alt="Crystal 1" width="200px" height="200px">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+                    <img class="crystalimg img-responsive" id="crystal2" src="assets/images/crystal2.jpg" alt="Crystal 2" width="200px" height="200px">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+                    <img class="crystalimg img-responsive" id="crystal3" src="assets/images/crystal3.jpg" alt="Crystal 3" width="200px" height="200px">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+                    <img class="crystalimg img-responsive" id="crystal4" src="assets/images/crystal4.jpg" alt="Crystal 4" width="200px" height="200px">
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-lg-12 instructions">
+                    <p>The object of the game is to match your score to the randomly chosen computer score. Each crystal shown has a random value assigned to it that is invisible to the player.</p>
+                    <p>If you go over the computers score you lose. If you match up the values you win. Good luck!!</p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-lg-4 total">
+                    <h3>TOTAL SCORE:</h3>
+                    <h3 id="totalScore"></h3>
+                </div>
+                <div class="col-lg-4 button">
+                    <h3 id="restartBtn"></h3>
+                    <button type="button" class="btn btn-lg">Restart</button>
+                </div>
+                <div class="col-lg-4 scores">
+                    <p class="score">Wins:
+                        <span id="wins"></span>
+                    </p>
+                </div>
+                <div class="col-lg-4 scores">
+                    <p class="score">Losses:
+                        <span id="losses"></span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+
+</html>
